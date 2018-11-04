@@ -10,12 +10,10 @@
         <meta name="description" content="Easily find any email address for free!"/>
         <meta property="og:site_name" content="Email Finder"/>
         <meta property="og:title" content="Email Finder by Leadnyze"/>
-        
+        <meta property="og:image" content="img/email-finder.png"/>
+        <meta property="og:url" content="https://email-finder.herokuapp.com/"/>
         <meta property="og:locale" content="en_US"/>
         <meta name="og:description" content="Easily find any email address for free!"/>
-        <meta name="og:creator" content="@Leadnyze"/>
-        
-
         
 
         <!--Import Google Icon Font-->
@@ -31,6 +29,10 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+
+        
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
           </nav>
 
           <div class="section">
@@ -109,12 +111,36 @@
 
         </div>
 
-       
+        <div id="modal1" class="modal">
+          <form id="email-capture">
+            <div class="modal-content">
+              <h4>We're glad you're finding it useful!</h4>
+              <p>If you'd like to keep using Email Finder, please add your email address.</p>
+
+              <div class="email-input">
+                <div class="input-field">
+                  <input id="email" name="email" type="text" class="validate" data-error="Please enter your email">
+                  <label for="email">Your email address</label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
+            </div>
+          </form>
+         </div>
 
         
+                <br>
+
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+                <!-- Place this tag where you want the widget to render. -->
+                
 
 
-       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>

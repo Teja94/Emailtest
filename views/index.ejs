@@ -11,7 +11,7 @@
         <meta property="og:site_name" content="Email Finder"/>
         <meta property="og:title" content="Email Finder by Leadnyze"/>
         <meta property="og:image" content="img/email-finder.png"/>
-        <meta property="og:url" content="https://leadnyze.herokuapp.com/"/>
+        <meta property="og:url" content="https://email-finder.herokuapp.com/"/>
         <meta property="og:locale" content="en_US"/>
         <meta name="og:description" content="Easily find any email address for free!"/>
         <meta name="og:creator" content="@Leadnyze"/>
@@ -46,7 +46,28 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-      <ul id="nav-mobile" class="side-nav">
+
+        <div class="content">
+          <nav class="teal" role="navigation">
+            <div class="nav-wrapper container">
+              <a id="logo-container" href="https://www.leadnyze.com" target="_blank" class="brand-logo">
+                <img src="img/big-picture-logo-white.png" alt="Big Picture"/>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a class="btn" href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a>
+                </li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li class="logo">
+                  <a id="logo-container" href="https://www.thebigpicture.io" target="_blank">
+                    <img src="img/big-picture-logo-black.png" alt="Big Picture"/>
+                  </a>
+                </li>
+                <li><a href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a></li>
+                <li><a href="https://www.thebigpicture.io" target="_blank">Learn more about Big Picture</a></li>
+              </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
           </nav>
@@ -81,17 +102,17 @@
 
                   <div class="row">
                     <div class="input-field col s6">
-                      <input placeholder="Josh" id="first_name" name="first_name" type="text" class="validate" data-error="Please enter a first name">
+                      <input placeholder="Elon" id="first_name" name="first_name" type="text" class="validate" data-error="Please enter a first name">
                       <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
-                      <input placeholder="Fechter" id="last_name" name="last_name" type="text" class="validate" data-error="Please enter a last name">
+                      <input placeholder="Musk" id="last_name" name="last_name" type="text" class="validate" data-error="Please enter a last name">
                       <label for="last_name">Last Name</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <input placeholder="bamf.media" id="domain" name="domain" type="text" class="validate" data-error="Please enter a domain">
+                      <input placeholder="spacex.com" id="domain" name="domain" type="text" class="validate" data-error="Please enter a domain">
                       <label for="domain">Domain</label>
                     </div>
                   </div>
@@ -150,6 +171,14 @@
           <div class="container">
             <div class="row">
               <div class="col l4 s12">
+                <h5 class="white-text">A Big Picture project</h5>
+                <p class="grey-text text-lighten-4">Big Picture is a web analytics platform that help you understand customer behavior and identify new leads.</p>
+                <a class="btn waves-effect waves-light lighten-3" target="_blank" href="https://www.thebigpicture.io">Learn more</a>
+              </div>
+              <div class="col l4 s12">
+                <h5 class="white-text">Free to use</h5>
+                <p class="grey-text text-lighten-4">This project is totally free to use. Fork and use it to build your own email finding app.</p>
+                <a class="btn waves-effect waves-light lighten-3" target="_blank" href="https://github.com/mfrye/email-finder">View on Github</a>
               </div>
               <div class="col l4 s12" style="overflow: hidden;">
                 <h5 class="white-text">Connect</h5>
@@ -163,4 +192,32 @@
                 <!-- Place this tag in your head or just before your close body tag. -->
                 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
-                
+                <!-- Place this tag where you want the widget to render. -->
+                <div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/115692797722886463720" data-rel="publisher"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 <a class="white-text text-lighten-3" target="_blank" href="https://www.thebigpicture.io">Big Picture</a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/mfrye/email-finder/blob/master/LICENSE">MIT License</a>
+            </div>
+          </div>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create', '<%- GOOGLE_ANALYTICS_ID %>','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 {{fn}}@{{domain}}
 {{ln}}@{{domain}}
-{{fn}}{{ln}}@{{domain}}
 {{fn}}.{{ln}}@{{domain}}
+{{fn}}{{ln}}@{{domain}}
 {{fi}}{{ln}}@{{domain}}
 {{fi}}.{{ln}}@{{domain}}
 {{fn}}{{li}}@{{domain}}
@@ -32,3 +32,5 @@
 {{ln}}_{{fi}}@{{domain}}
 {{li}}_{{fn}}@{{domain}}
 {{li}}_{{fi}}@{{domain}}
+{{fi}}@{{domain}}
+{{li}}@{{domain}}

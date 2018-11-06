@@ -4,19 +4,39 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Email Finder by Leadnyze</title>
+        <title>Open-Source Email Finder by Big Picture</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="Easily find any email address for free!"/>
-        <meta property="og:site_name" content="Email Finder by Leadnyze"/>
-        <meta property="og:title" content="Email Finder by Leadnyze"/>
+        <meta property="og:site_name" content="Email Finder"/>
+        <meta property="og:title" content="Open-Source Email Finder by Big Picture"/>
         <meta property="og:image" content="img/email-finder.png"/>
         <meta property="og:url" content="https://email-finder.herokuapp.com/"/>
         <meta property="og:locale" content="en_US"/>
         <meta name="og:description" content="Easily find any email address for free!"/>
-        
+        <meta name="og:creator" content="@bigpicturebiz"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@bigpicturebiz"/>
+        <meta name="twitter:title" content="Open-Source Email Finder by Big Picture"/>
+        <meta name="twitter:description" content="Easily find any email address for free!"/>
+        <meta name="twitter:image:src" content="img/email-finder.png"/>
 
-      
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="img/android-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png"/>
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -34,9 +54,29 @@
         <div class="content">
           <nav class="teal" role="navigation">
             <div class="nav-wrapper container">
-              
+              <a id="logo-container" href="https://www.thebigpicture.io" target="_blank" class="brand-logo">
+                <img src="img/big-picture-logo-white.png" alt="Big Picture"/>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a class="btn" href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a>
+                </li>
+              </ul>
 
-              <div class="section">
+              <ul id="nav-mobile" class="side-nav">
+                <li class="logo">
+                  <a id="logo-container" href="https://www.thebigpicture.io" target="_blank">
+                    <img src="img/big-picture-logo-black.png" alt="Big Picture"/>
+                  </a>
+                </li>
+                <li><a href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a></li>
+                <li><a href="https://www.thebigpicture.io" target="_blank">Learn more about Big Picture</a></li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+          </nav>
+
+          <div class="section">
             <div class="container">
 
               <div class="header center">
@@ -112,7 +152,25 @@
 
         </div>
 
-       
+        <div id="modal1" class="modal">
+          <form id="email-capture">
+            <div class="modal-content">
+              <h4>We're glad you're finding it useful!</h4>
+              <p>If you'd like to keep using Email Finder, please add your email address.</p>
+
+              <div class="email-input">
+                <div class="input-field">
+                  <input id="email" name="email" type="text" class="validate" data-error="Please enter your email">
+                  <label for="email">Your email address</label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
+            </div>
+          </form>
+         </div>
+
         <footer class="page-footer teal">
           <div class="container">
             <div class="row">

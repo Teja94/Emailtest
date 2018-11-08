@@ -1,9 +1,11 @@
 {{fn}}.{{ln}}@{{domain}}
 {{fn}}@{{domain}}
-{{ln}}@{{domain}}
-{{fn}}{{ln}}@{{domain}}
 {{fi}}{{ln}}@{{domain}}
 {{fi}}.{{ln}}@{{domain}}
+{{fn}}_{{ln}}@{{domain}}
+{{fi}}_{{ln}}@{{domain}}
+{{fn}}{{ln}}@{{domain}}
+{{ln}}@{{domain}}
 {{fn}}{{li}}@{{domain}}
 {{fn}}.{{li}}@{{domain}}
 {{fi}}{{li}}@{{domain}}
@@ -24,8 +26,6 @@
 {{ln}}-{{fi}}@{{domain}}
 {{li}}-{{fn}}@{{domain}}
 {{li}}-{{fi}}@{{domain}}
-{{fn}}_{{ln}}@{{domain}}
-{{fi}}_{{ln}}@{{domain}}
 {{fn}}_{{li}}@{{domain}}
 {{fi}}_{{li}}@{{domain}}
 {{ln}}_{{fn}}@{{domain}}

@@ -1,7 +1,5 @@
 {
-  "name": "Email Finder",
+  "name": "Email Finder by Leadnyze",
   "description": "Easily find any email address for free!",
-  "repository": "https://github.com/mfrye/email-finder",
-  "logo": "https://www.thebigpicture.io/android-icon-192x192.png",
   "keywords": ["node", "express", "email"]
 }

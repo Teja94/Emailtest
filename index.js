@@ -36,8 +36,8 @@ app.get('/', function(req, res){
 app.post('/find', function(req, res) {
 
   var data = {
-    name: req.body.first_name + ' ' + req.body.last_name,
-    domain: req.body.domain
+    name: req.body.first_name.trim() + ' ' + req.body.last_name.trim(),
+    domain: req.body.domain.replace(/(https:\/\/|http:\/\/| |www.|^)|( |\/|$)/g, '')
   };
 
   emailFinder(data)
